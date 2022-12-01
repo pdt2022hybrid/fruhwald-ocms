@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Kontroler
+
+# Model Form Field configuration
+form: $/acme/blog/models/pluginlol/fields.yaml
+
+# Model Class name
+modelClass: Acme\Blog\Models\Pluginlol
+
+# Default redirect location
+defaultRedirect: acme/blog/kontroler
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: acme/blog/kontroler/update/:id
+    redirectClose: acme/blog/kontroler
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: acme/blog/kontroler
+    redirectClose: acme/blog/kontroler
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title
